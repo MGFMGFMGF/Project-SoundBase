@@ -1,0 +1,57 @@
+.following{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+.following-container {
+    width: 95%;
+}
+.following-top {
+    display: flex;
+    height: 60vh;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.following-box {
+    width: 87%;
+    margin-right: 30px;
+    border: 1px solid black;
+}
+.following-box .profile-name{
+    padding: 10px;
+    background-color: midnightblue;
+    font-weight: bold;
+    color: white;
+}
+.following-container .profile-image{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWr2MH262TO4fxMCYl2J-HLLzUNfsI4mZdDKgKd3qkxsgX4EGxng&s") center center no-repeat;
+    background-size: cover;
+    height: calc(100% - 39px);
+    width: 100%;
+}
+.profile-buttons{
+    height: 100% - 50vh;
+    display: flex;
+}
+.profile-button-left{
+    width: 70%;
+}
+.profile-button-left>button{
+    margin-right: 10px;
+    width: 20%;
+    border-radius: 0px;
+    font-weight: bold;
+}
+.profile-button-left .profile-tracks {
+    background-color: yellowgreen;
+}
+.profile-button-right{
+    width: 30%;
+}
+.profile-button-right>button{
+    width: 50%;
+    border-radius: 0px;
+    font-weight: bold;
+    margin-left: 25px;
+    background-color: gray;
+}

@@ -1,0 +1,89 @@
+.profile{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+.profile-container {
+    width: 95%;
+}
+.profile-top {
+    display: flex;
+    height: 60vh;
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+}
+.profile-box {
+    width: 87%;
+    margin-right: 30px;
+    border: 1px solid black;
+}
+.profile-box .profile-name{
+    padding: 10px;
+    background-color: midnightblue;
+    font-weight: bold;
+    color: white;
+}
+.profile-container .profile-image{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWr2MH262TO4fxMCYl2J-HLLzUNfsI4mZdDKgKd3qkxsgX4EGxng&s") center center no-repeat;
+    background-size: cover;
+    height: calc(100% - 39px);
+    width: 100%;
+}
+.profile-buttons{
+    height: 100% - 50vh;
+    display: flex;
+}
+.profile-button-left{
+    width: 70%;
+}
+.profile-button-left>button{
+    margin-right: 10px;
+    width: 20%;
+    border-radius: 0px;
+    font-weight: bold;
+}
+.profile-button-left .profile-tracks {
+    background-color: yellowgreen;
+}
+.profile-button-left .profile-bookmarks {
+    background-color: mediumvioletred
+}
+.profile-button-right{
+    width: 30%;
+}
+.profile-button-right>button{
+    width: 50%;
+    border-radius: 0px;
+    font-weight: bold;
+    margin-left: 25px;
+    background-color: crimson;
+}
+.upload-profile-image {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.upload-profile-image + label {
+    position: relative;
+    font-size: 16px;
+    margin-left: 88%;
+    margin-top: 1%;
+    color: black;
+    background: #c2c2c2;
+    display: inline-block;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.upload-profile-image:focus + label,
+.upload-profile-image + label:hover {
+    background-color: #a0c2ff;
+}
+.upload-profile-image + label {
+	cursor: pointer; /* "hand" cursor */
+}

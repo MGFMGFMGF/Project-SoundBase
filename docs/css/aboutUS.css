@@ -1,0 +1,97 @@
+.aboutUS{
+    height: 100vh;
+    width: 100%;
+    margin-top: 35px;
+}
+.aboutUS-header{
+    height: 7%;
+    width: 100%;
+}
+.aboutUS-name{
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(255,0,112,1), rgba(255, 0, 112, 0.8), rgba(255,0,112,0.6),  rgba(255,0,112,0.8), rgba(225,0,112,1));
+}
+.aboutUS-name{
+    display: flex;
+    justify-content: space-evenly;
+}
+.team-name{
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+}
+.social-link{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    margin-top: 12px;
+}
+.btn-icon{
+    text-align: center;
+}
+#facebook {
+    margin-right: 20px;
+    width: 50px;
+}
+#website{
+    width: 50px;
+    margin-right: 20px;
+}
+.aboutUS-content {
+    width: 100%;
+    height: 75%;
+}
+/* .aboutUS-video{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#myVideo{
+    width: 100%;
+    background-size: cover;
+} */
+.image{
+    margin-bottom: 20px;
+}
+#image {
+    background-size: cover;
+    width: 100%;
+}
+.intro-text>p{
+    font-weight: bold;
+    font-size: 17px;    
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+    margin-top: 10px;
+    font-family: 'Gelasio', serif;
+}
+#welcome{
+    margin-bottom: 10px;
+    font-family: 'Gelasio', serif;
+}
+#end-text{
+    margin-top: 10px;
+    font-family: 'Gelasio', serif;
+    color: orangered;
+}
+#signature{
+    margin-top: 20px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+}
+#sign-name{
+    margin-top: 20px;
+    font-family: 'Gelasio', serif;
+}
+
+/* ----------- MEMBERS & CONTACT --------------- */
+.aboutUS-footer{
+    height: 18.5%;
+    width: 100%;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>HOME</title>
+
+    <link rel="stylesheet" href="../SoundBase/css/login.css">
+    <link rel="stylesheet" href="../SoundBase/css/register.css">
+    <link rel="stylesheet" href="../SoundBase/css/home.css">
+    <link rel="stylesheet" href="../SoundBase/css/bookmark.css">
+    <link rel="stylesheet" href="../SoundBase/css/following.css">
+    <link rel="stylesheet" href="../SoundBase/css/upload.css">
+    <link rel="stylesheet" href="../SoundBase/css/profile.css">
+    <link rel="stylesheet" href="../SoundBase/css/friendAccount.css">
+    <link rel="stylesheet" href="../SoundBase/css/aboutUS.css">
+
+    <script src="../SoundBase/component.js"></script>
+    <script src="../SoundBase/controller.js"></script>
+    <script src="../SoundBase/view.js"></script>
+    <script src="../SoundBase/main.js"></script>
+
+</head>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCIYNDp4t7H_JP9bWiopgj-zsUmzicWHrk",
+        authDomain: "soundbase-16f00.firebaseapp.com",
+        databaseURL: "https://soundbase-16f00.firebaseio.com",
+        projectId: "soundbase-16f00",
+        storageBucket: "gs://soundbase-16f00.appspot.com",
+        messagingSenderId: "841621021540",
+        appId: "1:841621021540:web:e3f52e0e60239a41c1d071"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+</script>
+
+<body>
+    <section class="upload">
+        <form class="form-report" id="form-feedback">
+            <section class="upload-song">
+                <div class="report-title">Feedback Section</div>
+            </section>
+            <section class="song-info">
+                <div class="song-info-container">
+                    <div class="feedback-container">
+                        <textarea name="feedbackInput" id="report-input-area" rows="20" cols="60">Enter Text Here </textarea>
+                    </div>
+                </div>
+            </section>
+            <button type="submit" class='btn-icon' id="submit-feedback-btn"><i class="fas fa-paper-plane"></i></button>
+        </form>
+    </section>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a class="logo" id="logo"></a>
+                <div class="nav-left-menu">
+                    <a class="page" id="homepage">HOME</a>
+                    <a class="page" id="mySongs">MY SONGS</a>
+                    <a class="page" id="bookmark">BOOKMARK</a>
+                    <a class="page" id="follow">FOLLOW</a>
+                </div>
+            </div>
+            <div class="nav-middle">
+                <form id="nav-search" class="nav-search">
+                    <input class="nav-search-bar" type="search" placeholder="Search" name="search">
+                    <button type="submit" id="btn-icon-search" class='btn-icon'><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="nav-right">
+                <a class="upload-btn" id="nav-upload">UPLOAD</a>
+                <a class="user-name" id="nav-profile"></a>
+                <div class="more-information-btn">
+                    <button class="btn-icon" id="more-information-btn"><i class="fas fa-ellipsis-h"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="more-information-menu" id="more-information-menu">
+        <div class="profileMenu">
+            <div class="profileMenu_item" id="aboutUS">About us</div>
+            <div class="profileMenu_item" id="feedback">Feedback</div>
+            <div class="profileMenu_item" id="songStation">Song Station (Beta)</div>
+            <div class="profileMenu_item" id="sign-out-btn">Sign Out</div>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
